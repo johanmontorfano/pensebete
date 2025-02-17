@@ -24,6 +24,7 @@ if [[ "$REPLY" =~ ^[Yy]$ ]]; then
     echo "Created /opt/"$APPNAME"/main"
 
     cp -rf * /opt/$APPNAME/main/
+    rm -f /opt/$APPNAME/main/install.sh
     echo "Copied files to /opt/"$APPNAME"/main"
 
     ln -sf /opt/$APPNAME/main/$APPENTRY /usr/bin/$APPNAME
