@@ -49,7 +49,7 @@ function List_with_filter(lowrate, highrate)
                 details = data.msg
             end
             print(string.format(
-                "%s\t%d%%\t%s",
+                "%-20s\t%d%%\t%s",
                 data.name,
                 data.rate / 10 * 100,
                 details
