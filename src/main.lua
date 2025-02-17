@@ -3,7 +3,7 @@ require "src.save"
 require "src.utils"
 
 Init_db()
-if arg[1] == "--help" then
+if #arg < 2 or arg[2] == "--help" then
     print "USAGE"
     print "\tpensebete --help"
     print "\tpensebete [--all | --ongoing | --finished]"
